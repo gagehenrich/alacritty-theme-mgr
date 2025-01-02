@@ -1,0 +1,40 @@
+[general]
+import = [
+    "./themes/night_owl.toml"
+]
+
+[keyboard]
+bindings = [
+{ key = "N", mods = "Control", action = "CreateNewWindow" },
+{ key = "V", mods = "Control", action = "Paste" },
+]
+
+[terminal.shell]
+program = "wsl"
+args = ["~"]
+
+[selection]
+save_to_clipboard = true
+semantic_escape_chars = ",│`|\"' ()[]{}<>\t"
+
+[scrolling]
+history = 20000
+
+[window]
+opacity = 1.0
+padding.x = 10
+padding.y = 15
+
+decorations = "Transparent"
+decorations_theme_variant = "Dark"
+
+[font]
+normal.family = "JetBrainsMono Nerd Font"
+bold.family = "JetBrainsMono Nerd Font"
+italic.family = "JetBrainsMono Nerd Font"
+bold_italic.family = "JetBrainsMono Nerd Font"
+size = 8.0
+
+
+[cursor]
+unfocused_hollow = true
