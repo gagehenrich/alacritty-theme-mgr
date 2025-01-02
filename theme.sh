@@ -6,6 +6,7 @@ theme_dir="${base_dir}/themes"
 
 target_theme="$1"
 scan_duration=${2:-0.5}
+scan_cmd=${3:-"ls -lrt --color=auto"}
 theme_file="${theme_dir}/${target_theme}.toml"
 
 function get_current_theme {
@@ -27,7 +28,7 @@ if [ "$target_theme" == "scan" ]; then
     target_theme="$(random_theme)"
     sudo sed -i "s/$current/$target_theme/g" "$conf_file"
     echo -e "theme: $(get_current_theme)"
-    ls -lrt --color=auto
+    $scan_cmd
     current=$(get_current_theme)
     sleep $scan_duration && clear
   done

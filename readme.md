@@ -1,10 +1,11 @@
 # Alacritty Theme Manager
 
-[![Watch the video](https://raw.githubusercontent.com/gagehenrich/alacritty-theme-mgr/main/img/thumbnail.png)](https://raw.githubusercontent.com/gagehenrich/alacritty-theme-mgr/main/img/theme-mgr.mp4)
-
 A lightweight and efficient command-line utility to manage and switch Alacritty themes with ease.
 
----
+
+
+https://github.com/user-attachments/assets/7d2e345e-8bf8-45b1-8048-127d97acce2e
+
 
 ## Features
 
@@ -21,22 +22,22 @@ A lightweight and efficient command-line utility to manage and switch Alacritty 
 ### Prerequisites
 - [Alacritty](https://github.com/alacritty/alacritty) installed on your system.
 - Bash shell.
-- Administrator privileges for installation.
+- Sudo (you will be prompted during installation)
 
 ### Steps
 1. Clone this repository:
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/gagehenrich/alacritty-theme-mgr.git
    cd alacritty-theme-manager
    ```
-2. Run the `make` command:
+2. Optional: configure `./alacritty.toml` to your desired configuration (but do not modify the theme import).
+3. Run the `make` command:
    ```bash
    make install
    ```
-3. Add the autocomplete script to your shell configuration:
+4. Source autocomplete (also added to .bashrc).
    ```bash
-   echo "source $HOME/.config/alacritty/.autocomplete.sh" >> ~/.bashrc
-   source ~/.bashrc
+   source source $HOME/.config/alacritty/.autocomplete.sh
    ```
 
 ---
@@ -62,6 +63,10 @@ $ theme scan
 ```
 Continuously switches themes every 0.5 seconds until interrupted (Ctrl+C).
 
+Optionally adjust scan duration (s):
+```bash
+$ theme scan 2
+```
 #### Get the Current Theme
 ```bash
 $ theme
