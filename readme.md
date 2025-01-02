@@ -55,16 +55,18 @@ $ theme random
 ```
 
 #### Scan and Preview Themes
+usage: `theme scan <optional: duration> <optional: cmd>` 
+default:
 ```bash
 $ theme scan
 ```
 Continuously switches themes every 0.5 seconds until interrupted (Ctrl+C).
 
-- Optional: adjust scan duration (s):
+adjust scan duration 2s:
 ```bash
 $ theme scan 2
 ```
-- Optional: adjust scan cmd: 
+scan themes 1s with pfetch as scan cmd:
 ```bash
 $ theme scan 1 pfetch
 ```
