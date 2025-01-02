@@ -23,14 +23,13 @@ current=$(get_current_theme)
 echo "current theme: $current"
 
 if [ "$target_theme" == "scan" ]; then
-  if [ -n $ ]
   while true; do
     target_theme="$(random_theme)"
     sudo sed -i "s/$current/$target_theme/g" "$conf_file"
     echo -e "theme: $(get_current_theme)"
     ls -lrt --color=auto
     current=$(get_current_theme)
-    sleep 0.5 && clear
+    sleep $scan_duration && clear
   done
   exit
 fi
