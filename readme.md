@@ -109,8 +109,6 @@ new theme: nord
 $ theme scan
 current theme: nord
 theme: solarized_dark
-theme: onedark
-...
 ```
 
 ---
