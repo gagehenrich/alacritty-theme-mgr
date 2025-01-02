@@ -34,7 +34,7 @@ https://github.com/user-attachments/assets/26dda245-63e4-42c8-967b-2b641c86507b
    ```
 4. Source autocomplete (also added to .bashrc).
    ```bash
-   source source $HOME/.config/alacritty/.autocomplete.sh
+   source $HOME/.config/alacritty/.autocomplete.sh
    ```
 
 ---
@@ -60,9 +60,13 @@ $ theme scan
 ```
 Continuously switches themes every 0.5 seconds until interrupted (Ctrl+C).
 
-Optionally adjust scan duration (s):
+- Optional: adjust scan duration (s):
 ```bash
 $ theme scan 2
+```
+- Optional: adjust scan cmd: 
+```bash
+$ theme scan 1 pfetch
 ```
 #### Get the Current Theme
 ```bash
