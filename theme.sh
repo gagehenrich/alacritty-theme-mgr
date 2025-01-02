@@ -5,6 +5,7 @@ conf_file="${base_dir}/alacritty.toml"
 theme_dir="${base_dir}/themes"
 
 target_theme="$1"
+scan_duration=${2:-0.5}
 theme_file="${theme_dir}/${target_theme}.toml"
 
 function get_current_theme {
@@ -22,6 +23,7 @@ current=$(get_current_theme)
 echo "current theme: $current"
 
 if [ "$target_theme" == "scan" ]; then
+  if [ -n $ ]
   while true; do
     target_theme="$(random_theme)"
     sudo sed -i "s/$current/$target_theme/g" "$conf_file"
