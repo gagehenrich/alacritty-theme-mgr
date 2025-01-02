@@ -80,7 +80,7 @@ Displays the name of the currently active theme.
 
 During installation, the script automatically sets up your Alacritty configuration directory based on your environment:
 
-- **WSL**: Configuration is placed in `AppData/Roaming/alacritty`.
+- **WSL**: Configuration is placed in `%AppData%/Roaming/alacritty`.
 - **Linux**: Configuration is placed in `~/.config/alacritty`.
 
 ---
