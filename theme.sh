@@ -10,7 +10,7 @@ scan_cmd=${3:-"ls -lrt --color=auto"}
 theme_file="${theme_dir}/${target_theme}.toml"
 
 function get_current_theme {
-  awk -F/ '/toml/ {
+  awk -F/ '/theme.*toml/ {
     print $NF
   }' <(cat "$conf_file") | sed -e 's/.toml//g' -e 's/\"//g'
 }
