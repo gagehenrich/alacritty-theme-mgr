@@ -2,7 +2,7 @@
 
 A lightweight and efficient command-line utility to manage and switch Alacritty themes with ease.
 
-https://github.com/user-attachments/assets/6c71ea1f-f81c-4758-a291-35bbc8e38087
+https://github.com/user-attachments/assets/487c67db-3138-45cc-b737-619ea0a77ea7
 
 ## Features
 
